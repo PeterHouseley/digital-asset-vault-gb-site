@@ -1,6 +1,24 @@
 {
-  "cleanUrls": false,
+  "version": 2,
+  "cleanUrls": true,
   "trailingSlash": true,
+  "rewrites": [
+    { "source": "/products/excel-workbooks", "destination": "/products/excel-workbooks/index.html" },
+    { "source": "/products/business-bundles", "destination": "/products/business-bundles/index.html" },
+    { "source": "/products/creator-tools", "destination": "/products/creator-tools/index.html" },
+    { "source": "/products/maker-studio-command-centre", "destination": "/products/maker-studio-command-centre/index.html" },
+    { "source": "/products/annual-budget-debt-freedom", "destination": "/products/annual-budget-debt-freedom/index.html" },
+    { "source": "/products/wedding-planner-workbook", "destination": "/products/wedding-planner-workbook/index.html" },
+    { "source": "/products/self-employed-tax-tracker", "destination": "/products/self-employed-tax-tracker/index.html" },
+    { "source": "/products/bookkeeping-inventory-workbook", "destination": "/products/bookkeeping-inventory-workbook/index.html" },
+    { "source": "/products", "destination": "/products/index.html" },
+    { "source": "/launch-hub", "destination": "/launch-hub/index.html" },
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" },
+    { "source": "/terms", "destination": "/terms/index.html" },
+    { "source": "/app-info", "destination": "/app-info/index.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
