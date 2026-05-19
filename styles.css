@@ -54,3 +54,6 @@ body.booting{overflow:hidden!important;}
 
 /* Smaller refined vault glyph animation */
 .boot-glyph{width:96px!important;height:96px!important;animation:glyphSmallSpin 1.85s cubic-bezier(.19,1,.22,1) forwards!important;filter:drop-shadow(0 0 18px rgba(247,213,138,.22)) drop-shadow(0 16px 38px rgba(0,0,0,.38))!important}@keyframes glyphSmallSpin{0%{transform:scale(.82) rotate(-80deg);opacity:0}16%{opacity:1}35%{transform:scale(1.03) rotate(160deg);opacity:1}72%{transform:scale(.98) rotate(420deg);opacity:1}100%{transform:scale(.9) rotate(560deg);opacity:0}}.boot{animation:glyphBootExit .38s ease-out 1.9s forwards!important}
+
+/* Slow loader by 50 percent */
+.boot-glyph{animation-duration:2.775s!important}.boot{animation-delay:2.85s!important}
