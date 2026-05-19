@@ -57,3 +57,7 @@ body.booting{overflow:hidden!important;}
 
 /* Slow loader by 50 percent */
 .boot-glyph{animation-duration:2.775s!important}.boot{animation-delay:2.85s!important}
+
+
+/* Product detail pages + analytics affordance */
+.product-hero{padding-top:74px}.product-hero h1{font-size:clamp(46px,7vw,94px)}.module a,.footer a,.navlinks a,.panel a{transition:color .18s ease}.module a:hover,.footer a:hover,.panel a:hover{color:var(--gold)}[data-track]{position:relative}

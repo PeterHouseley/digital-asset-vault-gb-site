@@ -72,4 +72,14 @@
     $('[data-next]', slider)?.addEventListener('click', () => track.scrollBy({left:430,behavior:'smooth'}));
     $('[data-prev]', slider)?.addEventListener('click', () => track.scrollBy({left:-430,behavior:'smooth'}));
   });
+
+  document.addEventListener('click', e => {
+    const a = e.target.closest('[data-track=\"etsy-click\"]');
+    if (!a) return;
+    const key='dav_outbound_clicks';
+    const n=Number(localStorage.getItem(key)||0)+1;
+    localStorage.setItem(key,String(n));
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'etsy_outbound_click', href:a.href, count:n});
+  });
 })();
