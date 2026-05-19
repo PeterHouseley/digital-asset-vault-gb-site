@@ -343,3 +343,40 @@ body {
 .hero-actions a[href="#vault"] { position:relative; overflow:hidden; }
 .hero-actions a[href="#vault"]:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent); transform:translateX(-120%); animation:buttonSweep 2.8s ease-in-out infinite; }
 @keyframes buttonSweep { 50%,100% { transform:translateX(120%); } }
+
+/* Full dark cohesive theme reset */
+html, body { background:#030817 !important; color:var(--cream) !important; }
+body {
+  background:
+    linear-gradient(135deg, rgba(247,213,138,.08), transparent 26%),
+    linear-gradient(225deg, rgba(125,211,252,.08), transparent 30%),
+    linear-gradient(180deg,#030817 0%,#07172f 46%,#06142a 100%) !important;
+}
+.section-shell,
+.vault-entry {
+  background: linear-gradient(180deg, rgba(7,23,47,.96), rgba(3,8,23,.98)) !important;
+  color: var(--cream) !important;
+}
+.container.plain,
+.container.policy { color: var(--cream) !important; }
+h1,h2,h3,.quote { color: var(--cream) !important; }
+p,.section-head p,.plain p,.policy p,.policy li,.tile p,.tab-card span,.interface-card p,.command-card p,.process-card p,.faq p,.slide p,.big-product p,.audit-item span { color: rgba(255,253,246,.72) !important; }
+.metric-card,.app-panel,.product-card,.tile,.tab-card,.slide,.command-card,.interface-card,.premium-panel,.faq details,.big-product,.audit-item,.process-card,.sheet,.stat {
+  background: linear-gradient(145deg, rgba(14,42,79,.86), rgba(7,23,47,.72)) !important;
+  color: var(--cream) !important;
+  box-shadow: 0 24px 90px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.05) !important;
+}
+.metric-card b,.app-panel h3,.tile h3,.tab-card strong,.slide strong,.command-card h3,.interface-card h3,.process-card h3,.faq summary,.big-product h2,.audit-item b,.sheet strong,.stat b { color: var(--cream) !important; }
+.metric-card span,.tab-card span,.sheet span,.stat span { color: rgba(255,253,246,.68) !important; }
+.cell { background: rgba(125,211,252,.18) !important; }
+.cell.dark { background: var(--gold) !important; }
+.bar { background: rgba(255,255,255,.12) !important; }
+.grid-3 .tile,.process-card,.interface-card,.command-card { backdrop-filter: blur(18px); }
+.btn-secondary { background: rgba(255,255,255,.08) !important; color: var(--cream) !important; }
+.eyebrow { color: var(--gold) !important; background: rgba(255,255,255,.06) !important; }
+.vault-product { background: linear-gradient(145deg, rgba(14,42,79,.96), rgba(7,23,47,.86)) !important; color: var(--cream) !important; }
+.vault-marquee { background: rgba(3,8,23,.92) !important; }
+.footer { background:#030817 !important; color:rgba(255,253,246,.62) !important; border-top:0 !important; }
+.logo-img { filter: drop-shadow(0 12px 26px rgba(0,0,0,.34)); }
+.nav { background: rgba(3,8,23,.72) !important; }
+.module,.dark-section,.cosmic-slider,.cta-premium { background: linear-gradient(135deg, rgba(14,42,79,.92), rgba(3,8,23,.96)) !important; }
