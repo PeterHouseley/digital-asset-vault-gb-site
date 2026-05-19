@@ -1,4 +1,6 @@
 (() => {
+  document.body.classList.add('booting');
+  setTimeout(() => document.body.classList.remove('booting'), 2450);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => [...r.querySelectorAll(s)];
