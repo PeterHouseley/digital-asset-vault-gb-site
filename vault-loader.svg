@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" fill="none" aria-label="Vault opening icon">
+  <defs>
+    <linearGradient id="g" x1="38" y1="28" x2="182" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07172F"/>
+      <stop offset="0.45" stop-color="#1B4D87"/>
+      <stop offset="1" stop-color="#F7D58A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="48" stroke="url(#g)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M110 26v43M110 151v43M26 110h43M151 110h43" stroke="url(#g)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M50 50l30 30M170 50l-30 30M50 170l30-30M170 170l-30-30" stroke="url(#g)" stroke-width="13" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="110" cy="110" r="24" fill="url(#g)" opacity="0.96"/>
+  <path d="M110 99a9 9 0 0 0-5 16v15h10v-15a9 9 0 0 0-5-16Z" fill="#020612"/>
+</svg>
