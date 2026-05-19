@@ -331,3 +331,15 @@ body {
 .vault-entry.in-view .vault-product:nth-child(2){ transform:translateY(-52px); }
 .vault-entry.in-view .vault-product:nth-child(3){ transform:translateY(-24px) rotate(5deg); }
 @media(max-width:900px){.vault-entry-inner{grid-template-columns:1fr}.vault-device{min-height:480px}.vault-products{position:relative; margin-top:-70px; flex-wrap:wrap}.vault-product{width:100px}}
+
+/* Make vault entry obvious */
+#vault { scroll-margin-top: 90px; }
+.vault-entry { margin-top: 0; }
+.vault-copy .eyebrow { color: var(--gold) !important; }
+.vault-door { animation: vaultIdle 4.8s ease-in-out infinite; }
+@keyframes vaultIdle { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-8px) } }
+.vault-entry.in-view .vault-door { animation:none; }
+.nav-links a[href="#vault"] { color: var(--gold); font-weight:900; }
+.hero-actions a[href="#vault"] { position:relative; overflow:hidden; }
+.hero-actions a[href="#vault"]:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent); transform:translateX(-120%); animation:buttonSweep 2.8s ease-in-out infinite; }
+@keyframes buttonSweep { 50%,100% { transform:translateX(120%); } }
