@@ -152,3 +152,45 @@ body {
 .portal h3,.portal p{position:relative; z-index:1}.portal p{color:rgba(255,253,246,.75)}
 @media (prefers-reduced-motion: reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media (max-width: 860px){.portal-grid{grid-template-columns:1fr}.slide{min-width:88vw}}
+
+/* Fix pass: premium futuristic, not chaotic */
+body {
+  background: linear-gradient(180deg, #050b18 0%, #07172f 34%, #fffdf6 34%, #fffdf6 100%) !important;
+}
+.page-shell:before {
+  opacity: .08 !important;
+  animation-duration: 90s !important;
+}
+.page-shell:after {
+  opacity: .35 !important;
+  animation-duration: 80s !important;
+}
+.hero {
+  min-height: 640px !important;
+  padding-top: 42px !important;
+  padding-bottom: 72px !important;
+}
+.hero h1 {
+  color: #fffdf6 !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  text-shadow: none !important;
+}
+.product-card {
+  animation: floatCard 10s ease-in-out infinite !important;
+  box-shadow: 0 24px 90px rgba(0,0,0,.22) !important;
+}
+.orbit { opacity: .45 !important; }
+.cosmic-slider {
+  background: linear-gradient(135deg,#07172f,#0b2142) !important;
+  border-color: rgba(247,213,138,.28) !important;
+}
+.slide {
+  min-width: min(360px, 82vw) !important;
+  min-height: 220px !important;
+}
+.portal:after { opacity: .35 !important; }
+.reveal { opacity: 1 !important; transform: none !important; }
+.btn-secondary { color: #fffdf6 !important; }
+.section { padding: 72px 0 !important; }
+.dark-section { box-shadow: 0 28px 100px rgba(7,23,47,.18); }
