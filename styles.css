@@ -256,3 +256,49 @@ body { background: #030817 !important; }
 .interface-card { border-radius:30px; padding:26px; background:rgba(255,255,255,.94); border:1px solid var(--line); box-shadow:var(--shadow); }
 .interface-card h3 { margin:0 0 10px; font-size:28px; letter-spacing:-.045em; }
 @media(max-width:1000px){.app-hero,.app-grid,.module-grid,.interface-strip{grid-template-columns:1fr}.command-ui{min-height:auto}.metrics-row{grid-template-columns:1fr}.app-sidebar{display:none}}
+
+/* Flowing seamless UI pass */
+.page-shell:before,
+.page-shell:after,
+.bg-orb,
+.orbit,
+.portal:after,
+.product-card:before,
+.module:after,
+.slide:before,
+.dark-section:before { display:none !important; }
+body {
+  background:
+    linear-gradient(135deg, rgba(247,213,138,.08) 0%, transparent 24%),
+    linear-gradient(225deg, rgba(125,211,252,.10) 0%, transparent 28%),
+    linear-gradient(180deg,#030817 0%,#07172f 42%,#0b2142 62%,#f8f6ef 62%,#fffdf6 100%) !important;
+}
+.section-shell { background: linear-gradient(180deg, rgba(8,22,45,.96) 0%, rgba(248,246,239,.98) 18%, #fffdf6 100%) !important; }
+.nav { border:0 !important; background:linear-gradient(180deg,rgba(3,8,23,.72),rgba(3,8,23,.38)) !important; box-shadow:none !important; }
+.app-hero { gap:52px; }
+.command-ui { border:0 !important; background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.045)) !important; box-shadow:0 50px 160px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.10) !important; }
+.app-topbar,.app-sidebar,.metric-card,.app-panel,.signal,.product-card,.tile,.tab-card,.slide,.command-card,.interface-card,.premium-panel,.faq details,.big-product,.audit-item,.process-card {
+  border:0 !important;
+  box-shadow: 0 24px 80px rgba(7,23,47,.10) !important;
+}
+.app-topbar,.app-sidebar { background:rgba(3,8,23,.46) !important; }
+.metric-card,.app-panel,.product-card,.tile,.tab-card,.slide,.command-card,.interface-card,.premium-panel,.faq details,.big-product,.audit-item,.process-card {
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(239,245,255,.84)) !important;
+}
+.dark-section,.cosmic-slider,.module,.cta-premium {
+  border:0 !important;
+  background:linear-gradient(135deg,rgba(7,23,47,.98),rgba(14,42,79,.94),rgba(7,23,47,.98)) !important;
+  box-shadow:0 34px 120px rgba(7,23,47,.18) !important;
+}
+.module-grid,.interface-strip,.matrix,.grid-3,.process,.audit-strip,.metrics-row { gap:20px !important; }
+.sheet,.stat,.cell,.bar,.side-pill { border:0 !important; }
+.vault-marquee { border:0 !important; background:linear-gradient(90deg,rgba(7,23,47,.98),rgba(18,52,95,.95),rgba(7,23,47,.98)) !important; }
+.hero h1,.app-copy h1 { letter-spacing:-.085em; }
+.app-copy p { max-width:700px; }
+.btn,.nav-cta { box-shadow:none !important; }
+.btn-primary,.nav-cta { background:linear-gradient(135deg,#f7d58a,#ffe7a8) !important; }
+.btn-secondary { border:0 !important; background:rgba(255,255,255,.10) !important; }
+.kicker { color:#d9b86f !important; }
+.pipeline .pipe { grid-template-columns:92px 1fr 42px; }
+.module:hover,.tile:hover,.tab-card:hover,.slide:hover,.product-card .sheet:hover { transform:translateY(-5px) !important; }
+@media(max-width:1000px){ .app-hero{gap:24px} }
