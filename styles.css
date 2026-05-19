@@ -29,3 +29,17 @@
 /* Boot vault spinner loader */
 .boot{background:radial-gradient(circle at 50% 45%,rgba(247,213,138,.14),transparent 34%),linear-gradient(180deg,#020612,#07172f)!important;gap:22px;animation:bootExit .75s cubic-bezier(.19,1,.22,1) 2.45s forwards!important}.bootbox,.bootline{display:none!important}.boot-vault{position:relative;width:190px;height:190px;border-radius:46px;background:linear-gradient(145deg,#07172f,#12345f 58%,#020612);box-shadow:0 38px 120px rgba(0,0,0,.55),inset 0 0 0 1px rgba(247,213,138,.20);display:grid;place-items:center;animation:vaultBoot 2.25s cubic-bezier(.19,1,.22,1) forwards;transform-origin:center}.boot-ring{position:absolute;inset:24px;border-radius:50%;background:conic-gradient(from 0deg,var(--gold),rgba(120,220,255,.28),var(--gold),rgba(255,255,255,.08),var(--gold));mask:radial-gradient(circle,transparent 0 34%,#000 35% 40%,transparent 41% 54%,#000 55% 60%,transparent 61%);-webkit-mask:radial-gradient(circle,transparent 0 34%,#000 35% 40%,transparent 41% 54%,#000 55% 60%,transparent 61%);animation:ringSpin 1.1s linear infinite}.boot-lock{width:72px;height:72px;border-radius:24px;background:linear-gradient(145deg,#fff1bd,var(--gold));color:#020612;display:grid;place-items:center;font-weight:950;letter-spacing:-.08em;box-shadow:0 0 55px rgba(247,213,138,.48);z-index:2}.boot .boottext{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px;animation:bootTextPulse 1.1s ease-in-out infinite}@keyframes ringSpin{to{transform:rotate(360deg)}}@keyframes vaultBoot{0%{transform:scale(.34) rotate(-80deg);opacity:0}28%{transform:scale(1.08) rotate(180deg);opacity:1}58%{transform:scale(.92) rotate(330deg)}82%{transform:scale(1.45) rotate(520deg)}100%{transform:scale(10) rotate(650deg);opacity:0}}@keyframes bootTextPulse{50%{opacity:.55;transform:translateY(2px)}}
 @media(prefers-reduced-motion:reduce){.boot{display:none!important}}
+
+/* Boot loader fix: centred, visible, no overflow */
+.boot{
+  position:fixed!important; inset:0!important; width:100vw!important; height:100dvh!important;
+  z-index:9999!important; display:flex!important; flex-direction:column!important; align-items:center!important; justify-content:center!important;
+  gap:24px!important; overflow:hidden!important; background:radial-gradient(circle at 50% 45%,rgba(247,213,138,.22),transparent 30%),linear-gradient(180deg,#020612,#07172f)!important;
+  animation:bootExitFixed .55s cubic-bezier(.19,1,.22,1) 2.25s forwards!important;
+}
+.boot-vault{width:220px!important;height:220px!important;border-radius:52px!important;animation:vaultBootFixed 2.05s cubic-bezier(.19,1,.22,1) forwards!important;}
+.boot-ring{animation:ringSpin .9s linear infinite!important;opacity:1!important;filter:drop-shadow(0 0 18px rgba(247,213,138,.45));}
+.boot-lock{width:84px!important;height:84px!important;font-size:24px!important;}
+.boot .boottext{position:static!important;margin:0!important;text-align:center!important;color:#f7d58a!important;text-shadow:0 0 24px rgba(247,213,138,.28);}
+@keyframes vaultBootFixed{0%{transform:scale(.45) rotate(-90deg);opacity:0}22%{transform:scale(1.06) rotate(120deg);opacity:1}52%{transform:scale(.96) rotate(260deg)}78%{transform:scale(1.12) rotate(390deg);opacity:1}100%{transform:scale(.72) rotate(520deg);opacity:0}}
+@keyframes bootExitFixed{to{opacity:0;visibility:hidden;pointer-events:none}}
